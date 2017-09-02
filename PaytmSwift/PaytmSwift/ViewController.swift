@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         orderDict["WEBSITE"] = "getlookwap";// paste website                            //mandatory
         //Order configuration in the order object
         orderDict["TXN_AMOUNT"] = "10"; // amount to charge                      // mandatory
-        orderDict["ORDER_ID"] = "15024565815310224";//change order id every time on new transaction
+        orderDict["ORDER_ID"] = "\(Date().timeIntervalSince1970)";//change order id every time on new transaction
         orderDict["REQUEST_TYPE"] = "DEFAULT";// remain same
         orderDict["CUST_ID"] = "123456789027"; // change acc. to your database user/customers
         orderDict["MOBILE_NO"] = "9910045591";// optional
